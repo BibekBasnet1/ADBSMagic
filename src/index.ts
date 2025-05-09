@@ -1,4 +1,5 @@
 import {englishToNepali,nepaliToEnglish} from "@utils/formatDate";
+import 'module-alias/register';
 
 /**
  * Convert English date string to Nepali date string
