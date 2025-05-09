@@ -1,121 +1,46 @@
-
 # AdBsMagic
 
 AdBsMagic is a Node.js project with TypeScript and Jest for testing. It provides functionality to manage and process various data related to your system. This README will guide you through setting up, running, and contributing to the project.
 
-## 🚀 Getting Started
+## 📦 Installation
 
-Follow these steps to set up and run the project locally.
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (version 16 or higher recommended)
-- [npm](https://www.npmjs.com/) (comes with Node.js)
-
-### 1. Clone the Repository
-
-Clone the repository to your local machine:
+To get started with AdBsMagic, you need to install it as a dependency:
 
 ```bash
-git clone https://github.com/BibekBasnet1/ADBSMagic.git
-cd AdBsMagic
+npm install adbsmagic
 ```
 
-### 2. Install Dependencies
-
-Install the necessary dependencies using npm:
+Or if you're using Yarn:
 
 ```bash
-npm install
+yarn add adbsmagic
 ```
 
-### 3. Build the Project
+## 🚀 Usage
 
-To compile the TypeScript files and prepare the project for running:
+Once installed, you can use the provided functions in your code. For example:
 
-```bash
-npm run build
+```ts
+import { BSToAD, ADToBS } from "adbsmagic";
+
+console.log(BSToAD('2082-01-26')); // Example BS to AD conversion
+console.log(ADToBS('2082-01-25')); // Example AD to BS conversion
 ```
 
-### 4. Run Tests
+### Functions
 
-To run the tests with Jest:
+- **BSToAD(date: string):** Converts a given BS date string to an AD date string.
+- **ADToBS(date: string):** Converts a given AD date string to a BS date string.
+
+## 🧪 Running Tests
+
+To run the tests for this package, you can use Jest. Run the following command:
 
 ```bash
 npm test
 ```
 
-This will run all the test suites defined in your project.
-
-## 📂 Folder Structure
-
-```bash
-├── dist/               # Compiled JavaScript files
-├── node_modules/       # Node.js modules
-├── src/                # Source code written in TypeScript
-│   ├── utils/          # Utility functions
-│   │   ├── calendarData.ts   # bsCalendar
-│   │   ├── formatDate.ts       # Date Calculation Logic
-│   │   ├── types.ts          # type definition
-│   │   └── validateDate.ts   # validations
-│   └── index.ts        # Main entry point of the app
-├── package.json        # Project configuration
-├── tsconfig.json       # TypeScript configuration
-└── README.md           # This file
-```
-
-## 🛠️ Development
-
-### Running the Development Server
-
-To run the development server:
-
-```bash
-npm run dev
-```
-
-This will start the server and allow you to make changes in the `src/` folder.
-
-[//]: # (### Linting and Formatting)
-
-[//]: # (We use `ESLint` and `Prettier` for code linting and formatting. To check and fix issues:)
-
-[//]: # ()
-[//]: # (```bash)
-
-[//]: # (npm run lint)
-
-[//]: # (npm run lint:fix)
-
-[//]: # (```)
-
-### Testing
-
-We use Jest for testing. To run all tests:
-
-```bash
-npm test
-```
-
-To run tests in watch mode:
-
-```bash
-npm run test:watch
-```
-
-### Build
-
-To create a production build:
-
-```bash
-npm run build
-```
-
-This will transpile the TypeScript code into JavaScript and output it in the `dist/` directory.
-
-## 📄 Configuration
-
-This project uses `ts-jest` for TypeScript testing. Ensure that you have a valid `jest.config.js` file in your project directory.
+This will execute the tests and give you the results.
 
 ## 👥 Contributing
 
@@ -126,6 +51,6 @@ This project uses `ts-jest` for TypeScript testing. Ensure that you have a valid
 5. Push to the branch (`git push origin feature/your-feature-name`)
 6. Create a new pull request
 
-## 📝 License
+## 📜 License
 
 This project is licensed under the MIT License.
