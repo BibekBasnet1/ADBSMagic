@@ -1,6 +1,6 @@
 {
   "name": "adbsmagic",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "description": "A package for AD to BS and BS to AD date conversion",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,12 +23,6 @@
     "@types/jest": "^29.5.14",
     "jest": "^29.7.0",
     "ts-jest": "^29.3.2",
-    "typescript": "^5.8.3",
-    "tsconfig-paths": "^4.0.0",
-    "module-alias": "^2.2.2"
-  },
-  "_moduleAliases": {
-    "@utils": "dist/utils",
-    "@types": "dist/utils/types"
+    "typescript": "^5.8.3"
   }
 }

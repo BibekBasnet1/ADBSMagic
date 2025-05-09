@@ -1,6 +1,6 @@
-import {validateEnglishDateRange, validateLeapYear, validateNepaliDateRange} from "@utils/validateDate";
-import calendarData from "@utils/calendarData";
-import {EnglishDate,NepaliDate} from "@utils/types";
+import {validateEnglishDateRange,validateLeapYear,validateNepaliDateRange} from "./validateDate";
+import calendarData from "./calendarData";
+import {EnglishDate,NepaliDate} from "./types";
 
 const getDayOfTheWeek = (day: number): string => {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];

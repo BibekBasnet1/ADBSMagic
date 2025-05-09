@@ -9,10 +9,6 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "baseUrl": "./",
-    "paths": {
-      "@utils/*": ["src/utils/*"],
-      "@types/*": ["src/utils/types/*"]
-    }
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist", "tests"]
