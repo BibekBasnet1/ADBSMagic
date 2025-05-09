@@ -1,6 +1,6 @@
 {
   "name": "adbsmagic",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A package for AD to BS and BS to AD date conversion",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
