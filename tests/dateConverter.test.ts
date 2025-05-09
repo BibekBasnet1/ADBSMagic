@@ -1,4 +1,4 @@
-import { ADToBS, BSToAD } from "@utils/formatDate";
+import {ADToBS,BSToAD} from "../src";
 
 describe('Date Conversion Tests', () => {
 
