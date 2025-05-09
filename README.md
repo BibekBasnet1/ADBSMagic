@@ -24,7 +24,7 @@ Once installed, you can use the provided functions in your code. For example:
 import { BSToAD, ADToBS } from "adbsmagic";
 
 console.log(BSToAD('2082-01-26')); // Example BS to AD conversion
-console.log(ADToBS('2082-01-25')); // Example AD to BS conversion
+console.log(ADToBS('2025-01-25')); // Example AD to BS conversion
 ```
 
 ### Functions
