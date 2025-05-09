@@ -9,13 +9,11 @@ import {englishToNepali,nepaliToEnglish} from "./utils/formatDate";
  */
 const englishToNepaliDate = (date: string, format: string = "YYYY-MM-DD"): string => {
     try {
-        // Split date and time components
         const [datePart, timePart] = date.split(' ');
         const time = timePart || null;
 
         const dateObj = new Date(datePart);
 
-        // Check if date is valid
         if (isNaN(dateObj.getTime())) {
             throw new Error('Invalid date format');
         }
@@ -24,10 +22,8 @@ const englishToNepaliDate = (date: string, format: string = "YYYY-MM-DD"): strin
         const month = dateObj.getMonth() + 1;
         const day = dateObj.getDate();
 
-        // Convert to Nepali date
         const npDate = englishToNepali(year, month, day);
 
-        // Ensure npDate properties are numbers before using padStart
         const nepYear = npDate.year !== null ? npDate.year.toString() : '0000';
         const nepMonth = npDate.month !== null ? String(npDate.month).padStart(2, '0') : '00';
         const nepDay = npDate.date !== null ? String(npDate.date).padStart(2, '0') : '00';
@@ -52,7 +48,6 @@ const englishToNepaliDate = (date: string, format: string = "YYYY-MM-DD"): strin
  */
 const nepaliToEnglishDate = (date: string, format: string = "YYYY-MM-DD"): string => {
     try {
-        // Split date and time components
         const [datePart, timePart] = date.split(' ');
         const time = timePart || null;
 
@@ -65,7 +60,6 @@ const nepaliToEnglishDate = (date: string, format: string = "YYYY-MM-DD"): strin
         // Format the English date according to the specified format
         const finalDate = `${engDate.year}-${String(engDate.month).padStart(2, '0')}-${String(engDate.date).padStart(2, '0')}`;
 
-        // Return with time component if present
         return time ? `${finalDate} ${time}` : finalDate;
     } catch (error) {
         console.error('Error converting date:', error);

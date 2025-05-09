@@ -40,16 +40,18 @@ To run the tests for this package, you can use Jest. Run the following command:
 npm test
 ```
 
-This will execute the tests and give you the results.
-
 ## 👥 Contributing
 
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature-name`)
-3. Make your changes
-4. Commit your changes (`git commit -am 'Add new feature'`)
-5. Push to the branch (`git push origin feature/your-feature-name`)
-6. Create a new pull request
+You can contribute to the development of this project by following the steps below:
+
+1. Fork the repository: [https://github.com/BibekBasnet1/ADBSMagic](https://github.com/BibekBasnet1/ADBSMagic)
+2. Clone your forked repository to your local machine.
+3. Create a new branch (`git checkout -b feature/your-feature-name`).
+4. Make your changes and commit them (`git commit -am 'Add new feature'`).
+5. Push your changes to your fork (`git push origin feature/your-feature-name`).
+6. Create a pull request to the main repository.
+
+We welcome all contributions to improve this project!
 
 ## 📜 License
 
